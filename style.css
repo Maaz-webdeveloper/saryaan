@@ -1,0 +1,38 @@
+* {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Mobile menu */
+#mobile-menu {
+  display: none;
+}
+#mobile-menu.open {
+  display: flex;
+}
+
+/* Nav hover */
+.nav-link {
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: #008c8c !important;
+}
+
+/* Sol item */
+.sol-item {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.sol-item.active {
+  color: white !important;
+}
+
+/* Description panel */
+.desc-panel {
+  transition: opacity 0.3s;
+}
+
+/* Button hover */
+button:hover {
+  opacity: 0.9;
+}

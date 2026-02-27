@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solutions — Saryaan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="m-0 p-0" style="background:#F4F7FA;">
+  <!-- ═══════════════════════════════════════ -->
+  <!--              NAVBAR                     -->
+  <!-- ═══════════════════════════════════════ -->
+  <nav class="w-full bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <span class="text-2xl font-bold tracking-tight" style="color:#0C1F3F;">
+        SARYAAN<span style="color:#008C8C;">.</span>
+      </span>
+
+      <!-- Desktop Links -->
+      <div class="hidden lg:flex items-center gap-8">
+        <!-- Desktop Links -->
+        <a href="index.html" class="text-sm font-medium nav-link" style="color:#1E293B;">Home</a>
+        <a href="solutions.html" class="text-sm font-medium nav-link" style="color:#1E293B;">Solutions</a>
+        <a href="industries.html" class="text-sm font-medium nav-link" style="color:#1E293B;">Industries</a>
+        <a href="partners.html" class="text-sm font-medium nav-link" style="color:#1E293B;">Partners</a>
+        <a href="resources.html" class="text-sm font-medium nav-link" style="color:#1E293B;">Resources</a>
+        <a href="company.html" class="text-sm font-medium nav-link" style="color:#1E293B;">Company</a>
+        <a href="contact.html" class="text-sm font-medium nav-link" style="color:#1E293B;">Contact</a>
+      </div>
+
+      <!-- Desktop Buttons -->
+      <div class="hidden lg:flex items-center gap-3">
+        <button class="p-2 rounded-full hover:bg-gray-100" style="color:#1E293B;">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
+          </svg>
+        </button>
+        <button class="p-2 rounded-full hover:bg-gray-100" style="color:#1E293B;">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 0c-2.5 2.5-4 6-4 10s1.5 7.5 4 10m0-20c2.5 2.5 4 6 4 10s-1.5 7.5-4 10M2 12h20" />
+          </svg>
+        </button>
+        <button class="px-5 py-2 rounded-full text-sm font-semibold text-white" style="background:#C9A227;">
+          Request Demo
+        </button>
+        <button class="px-5 py-2 rounded-full text-sm font-semibold text-white" style="background:#008C8C;">
+          Contact Us
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="lg:hidden p-2" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          style="color:#0C1F3F;">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden px-6 pb-5 flex-col gap-4 border-t border-gray-100">
+      <a href="index.html" class="text-sm font-medium py-2" style="color:#1E293B;">Home</a>
+      <a href="solutions.html" class="text-sm font-medium py-2" style="color:#1E293B;">Solutions</a>
+      <a href="industries.html" class="text-sm font-medium py-2" style="color:#1E293B;">Industries</a>
+      <a href="partners.html" class="text-sm font-medium py-2" style="color:#1E293B;">Partners</a>
+      <a href="resources.html" class="text-sm font-medium py-2" style="color:#1E293B;">Resources</a>
+      <a href="company.html" class="text-sm font-medium py-2" style="color:#1E293B;">Company</a>
+      <a href="contact.html" class="text-sm font-medium py-2" style="color:#1E293B;">Contact</a>
+      <div class="flex gap-3 pt-2">
+        <button class="px-4 py-2 rounded-full text-sm font-semibold text-white" style="background:#C9A227;">Request
+          Demo</button>
+        <button class="px-4 py-2 rounded-full text-sm font-semibold text-white" style="background:#008C8C;">Contact
+          Us</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!--           SOLUTIONS SECTION             -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="w-full py-20" style="background:#F4F7FA;">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <p class="text-sm font-semibold mb-2" style="color:#008C8C;">Our Solutions</p>
+      <h2 class="text-4xl font-bold mb-16" style="color:#0C1F3F;">
+        Powering the Flow of<br />Business Capital Across the GCC
+      </h2>
+
+      <div class="flex flex-col lg:flex-row gap-12 items-start">
+
+        <!-- LEFT: Donut Chart -->
+        <div class="w-full lg:w-5/12 flex justify-center items-center" style="min-height:340px;">
+          <div class="relative flex justify-center items-center" style="width:300px;height:300px;">
+            <svg viewBox="0 0 300 300" width="300" height="300" style="position:absolute;">
+              <path id="seg0" d="M150,150 L150,20 A130,130 0 0,1 262,215 Z" fill="#008C8C" onclick="switchSolution(0)"
+                style="cursor:pointer;transition:fill 0.3s;" />
+              <path id="seg1" d="M150,150 L262,215 A130,130 0 0,1 38,215 Z" fill="#b0bec5" onclick="switchSolution(1)"
+                style="cursor:pointer;transition:fill 0.3s;" />
+              <path id="seg2" d="M150,150 L38,215 A130,130 0 0,1 150,20 Z" fill="#f0e0a0" onclick="switchSolution(2)"
+                style="cursor:pointer;transition:fill 0.3s;" />
+              <circle cx="150" cy="150" r="75" fill="white" />
+            </svg>
+            <div class="relative z-10 text-center">
+              <div id="center-icon" class="flex items-center justify-center rounded-full mx-auto mb-2"
+                style="width:48px;height:48px;background:#008C8C;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 11h.01M12 11h.01M15 11h.01M9 15h.01M12 15h.01M15 15h.01M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+                </svg>
+              </div>
+              <p class="text-xs font-bold" style="color:#0C1F3F;">Your<br />Business</p>
+            </div>
+          </div>
+        </div>
+        <!-- RIGHT: Content -->
+        <div class="w-full lg:w-7/12">
+          <div class="flex items-center gap-3 mb-6">
+            <div id="sol-badge" class="flex items-center justify-center rounded-full"
+              style="width:40px;height:40px;background:rgba(0,140,140,0.15);border:2px solid #008C8C;">
+              <div id="sol-dot" class="rounded-full" style="width:14px;height:14px;background:#008C8C;"></div>
+            </div>
+            <div>
+              <h3 id="sol-title" class="text-xl font-bold" style="color:#0C1F3F;">Invoice Infrastructure Engine</h3>
+              <p id="sol-sub" class="text-sm" style="color:#64748b;">Convert static invoices into compliant,
+                finance-ready digital assets</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-6">
+            <div class="w-full md:w-1/2" id="items-list"></div>
+            <div class="w-full md:w-1/2 bg-white rounded-2xl p-6 shadow-sm" id="desc-panel"
+              style="border:1px solid rgba(0,140,140,0.2);">
+              <p id="desc-title" class="text-sm font-semibold mb-3" style="color:#008C8C;"></p>
+              <p id="desc-text" class="text-sm leading-relaxed" style="color:#475569;"></p>
+              <button class="mt-6 px-5 py-2 rounded-full text-sm font-semibold border" id="learn-btn"
+                style="border-color:#008C8C;color:#008C8C;">
+                Learn More →
+              </button>
+            </div>
+          </div>
+
+          <div class="flex gap-3 mt-8 flex-wrap">
+            <button onclick="switchSolution(0)" id="tab0"
+              class="px-4 py-2 rounded-full text-xs font-semibold text-white"
+              style="background:#008C8C;border:1px solid #008C8C;">
+              Invoice Engine
+            </button>
+            <button onclick="switchSolution(1)" id="tab1" class="px-4 py-2 rounded-full text-xs font-semibold"
+              style="background:white;color:#1E293B;border:1px solid #0C1F3F;">
+              Payment Engine
+            </button>
+            <button onclick="switchSolution(2)" id="tab2" class="px-4 py-2 rounded-full text-xs font-semibold"
+              style="background:white;color:#1E293B;border:1px solid #C9A227;">
+              SCF Engine
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!--          BUILT FOR GCC SECTION          -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="w-full py-20" style="background:#ffffff;">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Headline -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4" style="color:#0C1F3F;">
+          From Invoice to Capital —<br />In One Connected Workflow.
+        </h2>
+        <p class="text-base max-w-2xl mx-auto" style="color:#64748b;">
+          Saryaan replaces fragmented manual processes with structured digital workflows that reduce fraud risk,
+          accelerate payments, and unlock supplier liquidity.
+        </p>
+      </div>
+
+      <!-- 6 Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card 1 — Multi-ERP Integration -->
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+            style="background:rgba(0,140,140,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" style="color:#008C8C;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7zm0 5h16M9 4v16" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2" style="color:#0C1F3F;">Multi-ERP Integration</h3>
+          <p class="text-sm leading-relaxed mb-6" style="color:#64748b;">
+            Connect seamlessly with any ERP system — SAP, Oracle, Microsoft Dynamics — for unified invoice and payment
+            data flow.
+          </p>
+          <button class="text-sm font-semibold border rounded-full px-5 py-2 hover:opacity-80 transition-opacity"
+            style="border-color:#008C8C;color:#008C8C;">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Card 2 — ZATCA Ready -->
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+            style="background:rgba(201,162,39,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" style="color:#C9A227;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2" style="color:#0C1F3F;">ZATCA & GCC E-Invoicing Ready</h3>
+          <p class="text-sm leading-relaxed mb-6" style="color:#64748b;">
+            Fully compliant with ZATCA Phase 2 and all GCC e-invoicing mandates — ensuring zero regulatory risk across
+            all markets.
+          </p>
+          <button class="text-sm font-semibold border rounded-full px-5 py-2 hover:opacity-80 transition-opacity"
+            style="border-color:#C9A227;color:#C9A227;">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Card 3 — Islamic Finance -->
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+            style="background:rgba(0,140,140,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" style="color:#008C8C;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2" style="color:#0C1F3F;">Islamic Finance Compatible</h3>
+          <p class="text-sm leading-relaxed mb-6" style="color:#64748b;">
+            Built-in support for Murabaha, Wakala and Ijara structures — enabling Sharia-compliant supply chain
+            financing across the GCC.
+          </p>
+          <button class="text-sm font-semibold border rounded-full px-5 py-2 hover:opacity-80 transition-opacity"
+            style="border-color:#008C8C;color:#008C8C;">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Card 4 — Enterprise Security -->
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+            style="background:rgba(12,31,63,0.08);">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" style="color:#0C1F3F;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2" style="color:#0C1F3F;">Enterprise-Grade Security</h3>
+          <p class="text-sm leading-relaxed mb-6" style="color:#64748b;">
+            Bank-level encryption, role-based access control, and full audit trails — keeping your financial data secure
+            and compliant.
+          </p>
+          <button class="text-sm font-semibold border rounded-full px-5 py-2 hover:opacity-80 transition-opacity"
+            style="border-color:#0C1F3F;color:#0C1F3F;">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Card 5 — Risk & Analytics -->
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+            style="background:rgba(201,162,39,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" style="color:#C9A227;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2" style="color:#0C1F3F;">Risk & Analytics Layer</h3>
+          <p class="text-sm leading-relaxed mb-6" style="color:#64748b;">
+            Real-time risk scoring, supplier analytics and capital flow dashboards — giving you full visibility across
+            your B2B ecosystem.
+          </p>
+          <button class="text-sm font-semibold border rounded-full px-5 py-2 hover:opacity-80 transition-opacity"
+            style="border-color:#C9A227;color:#C9A227;">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Card 6 — Supply Chain Finance -->
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
+            style="background:rgba(0,166,90,0.1);">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" style="color:#00A65A;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2" style="color:#0C1F3F;">Supply Chain Finance Engine</h3>
+          <p class="text-sm leading-relaxed mb-6" style="color:#64748b;">
+            Unlock early payment liquidity for suppliers through bank-partner capital models — embedded directly into
+            your invoice workflow.
+          </p>
+          <button class="text-sm font-semibold border rounded-full px-5 py-2 hover:opacity-80 transition-opacity"
+            style="border-color:#00A65A;color:#00A65A;">
+            Learn More
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
