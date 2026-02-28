@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Saryaan Resources — Blog, Whitepapers, Webinars, Case Studies, and Regulatory Updates for GCC Finance Professionals."/>
+  <title>Resources — Saryaan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="m-0 p-0" style="background:#ffffff;">
+
+<!-- ═══════════════════════════════════════ -->
+<!--              NAVBAR                     -->
+<!-- ═══════════════════════════════════════ -->
+    <nav class="w-full bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold tracking-tight" style="color:#0C1F3F;text-decoration:none;">
+                SARYAAN<span style="color:#008C8C;">.</span>
+            </a>
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="index.html" class="text-sm font-bold nav-link" style="color:#008C8C;">Home</a>
+                <a href="solutions.html" class="text-sm font-medium nav-link" style="color:#1E293B;">Solutions</a>
+                <a href="industries.html" class="text-sm font-medium nav-link" style="color:#1E293B;">Industries</a>
+                <a href="partners.html" class="text-sm font-medium nav-link" style="color:#1E293B;">Partners</a>
+                <a href="resources.html" class="text-sm font-medium nav-link" style="color:#1E293B;">Resources</a>
+                <a href="company.html" class="text-sm font-medium nav-link" style="color:#1E293B;">Company</a>
+                <a href="contact.html" class="text-sm font-medium nav-link" style="color:#1E293B;">Contact</a>
+            </div>
+            <div class="hidden lg:flex items-center gap-3">
+                <button class="px-5 py-2 rounded-full text-sm font-semibold text-white"
+                    style="background:#C9A227;">Request Demo</button>
+                <button class="px-5 py-2 rounded-full text-sm font-semibold text-white"
+                    style="background:#008C8C;">Contact Us</button>
+            </div>
+            <!-- JS link: main.js -> toggleMenu() for mobile navbar -->
+            <button class="lg:hidden p-2" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" style="color:#0C1F3F;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="lg:hidden px-6 pb-5 flex-col gap-4 border-t border-gray-100">
+            <a href="index.html" class="text-sm font-medium py-2" style="color:#008C8C;">Home</a>
+            <a href="solutions.html" class="text-sm font-medium py-2" style="color:#1E293B;">Solutions</a>
+            <a href="industries.html" class="text-sm font-medium py-2" style="color:#1E293B;">Industries</a>
+            <a href="partners.html" class="text-sm font-medium py-2" style="color:#1E293B;">Partners</a>
+            <a href="resources.html" class="text-sm font-medium py-2" style="color:#1E293B;">Resources</a>
+            <a href="company.html" class="text-sm font-medium py-2" style="color:#1E293B;">Company</a>
+            <a href="contact.html" class="text-sm font-medium py-2" style="color:#1E293B;">Contact</a>
+            <div class="flex gap-3 pt-2">
+                <button class="px-4 py-2 rounded-full text-sm font-semibold text-white"
+                    style="background:#C9A227;">Request Demo</button>
+                <button class="px-4 py-2 rounded-full text-sm font-semibold text-white"
+                    style="background:#008C8C;">Contact Us</button>
+            </div>
+        </div>
+    </nav>
+
+<!-- ═══════════════════════════════════════ -->
+<!--           HERO BANNER                   -->
+<!-- ═══════════════════════════════════════ -->
+<section class="w-full py-20" style="background:#F4F7FA;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+      <div class="w-full lg:w-1/2">
+        <p class="text-sm font-semibold mb-3" style="color:#008C8C;">Knowledge Hub</p>
+        <h1 class="text-4xl lg:text-5xl font-bold leading-tight mb-4" style="color:#0C1F3F;">
+          Insights for GCC<br/>Finance Professionals.
+        </h1>
+        <p class="text-base" style="color:#475569;">
+          Stay ahead with expert articles, whitepapers, webinars, and regulatory updates — built for the GCC's evolving B2B finance landscape.
+        </p>
+      </div>
+      <!-- Resource type pills — mobile friendly -->
+      <div class="w-full lg:w-1/2 flex flex-wrap gap-3 lg:justify-end">
+        <span class="px-4 py-2 rounded-full text-sm font-semibold bg-white shadow-sm" style="color:#008C8C;border:1px solid rgba(0,140,140,0.2);">📝 Blog</span>
+        <span class="px-4 py-2 rounded-full text-sm font-semibold bg-white shadow-sm" style="color:#C9A227;border:1px solid rgba(201,162,39,0.2);">📄 Whitepapers</span>
+        <span class="px-4 py-2 rounded-full text-sm font-semibold bg-white shadow-sm" style="color:#0C1F3F;border:1px solid rgba(12,31,63,0.15);">🎙️ Webinars</span>
+        <span class="px-4 py-2 rounded-full text-sm font-semibold bg-white shadow-sm" style="color:#00A65A;border:1px solid rgba(0,166,90,0.2);">📊 Case Studies</span>
+        <span class="px-4 py-2 rounded-full text-sm font-semibold bg-white shadow-sm" style="color:#008C8C;border:1px solid rgba(0,140,140,0.2);">⚖️ Regulatory Updates</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Breadcrumb -->
+<div class="max-w-7xl mx-auto px-6 py-4">
+  <p class="text-sm" style="color:#64748b;">
+    <a href="index.html" style="color:#008C8C;">Home</a> › Resources
+  </p>
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!--        FEATURED ARTICLE                 -->
+<!-- ═══════════════════════════════════════ -->
+<section class="w-full py-12" style="background:#ffffff;">
+  <div class="max-w-7xl mx-auto px-6">
+    <p class="text-sm font-semibold mb-6" style="color:#008C8C;">Featured Article</p>
+    <div class="rounded-3xl overflow-hidden flex flex-col lg:flex-row" style="background:linear-gradient(135deg,#0C1F3F,#0a3d5c);min-height:280px;">
+      <div class="p-10 lg:p-14 flex flex-col justify-center w-full lg:w-3/5">
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold mb-6 w-fit" style="background:rgba(201,162,39,0.2);color:#C9A227;border:1px solid rgba(201,162,39,0.4);">
+          📄 Whitepaper
+        </span>
+        <h2 class="text-2xl lg:text-3xl font-bold text-white leading-snug mb-4">
+          The GCC Invoice Digitization Report 2025: How ZATCA Phase 2 is Reshaping B2B Finance
+        </h2>
+        <p class="text-sm mb-6" style="color:rgba(255,255,255,0.7);">
+          A deep-dive into how GCC enterprises are adapting to e-invoicing mandates, and what it means for supply chain finance, payment automation, and working capital management.
+        </p>
+        <button class="px-6 py-3 rounded-full font-semibold text-white text-sm w-fit" style="background:#C9A227;">
+          Download Whitepaper →
+        </button>
+      </div>
+      <div class="hidden lg:flex w-2/5 items-center justify-center p-10">
+        <div class="text-center">
+          <div class="w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-4" style="background:rgba(0,140,140,0.3);">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <p class="text-white font-bold text-lg">42 Pages</p>
+          <p style="color:rgba(255,255,255,0.6);" class="text-sm">Free Download</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!--        BLOG & INSIGHTS                  -->
+<!-- ═══════════════════════════════════════ -->
+<section class="w-full py-16" style="background:#ffffff;">
+  <div class="max-w-7xl mx-auto px-6">
+    <p class="text-sm font-semibold mb-2" style="color:#008C8C;">Blog & Industry Insights</p>
+    <h2 class="text-3xl font-bold mb-10" style="color:#0C1F3F;">Latest Articles</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Article 1 -->
+      <div class="rounded-2xl overflow-hidden hover:shadow-lg transition-shadow" style="border:1px solid #e2e8f0;">
+        <div class="w-full flex items-center justify-center p-8" style="height:160px;background:linear-gradient(135deg,#008C8C,#006666);">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:rgba(255,255,255,0.4);">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 11h.01M12 11h.01M15 11h.01M9 15h.01M12 15h.01M15 15h.01M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"/>
+          </svg>
+        </div>
+        <div class="p-6">
+          <span class="text-xs font-semibold px-2 py-1 rounded-full" style="background:rgba(0,140,140,0.1);color:#008C8C;">Invoice Finance</span>
+          <h3 class="text-base font-bold mt-3 mb-2" style="color:#0C1F3F;">ZATCA Phase 2: What Every GCC Corporate Needs to Know in 2025</h3>
+          <p class="text-xs leading-relaxed mb-4" style="color:#64748b;">A practical guide to ZATCA Phase 2 compliance requirements, timelines, and how to prepare your invoice workflows before the deadline.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs" style="color:#94a3b8;">Feb 2025 · 5 min read</span>
+            <button class="text-xs font-semibold" style="color:#008C8C;">Read More →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="rounded-2xl overflow-hidden hover:shadow-lg transition-shadow" style="border:1px solid #e2e8f0;">
+        <div class="w-full flex items-center justify-center p-8" style="height:160px;background:linear-gradient(135deg,#C9A227,#a07d1a);">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:rgba(255,255,255,0.4);">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+          </svg>
+        </div>
+        <div class="p-6">
+          <span class="text-xs font-semibold px-2 py-1 rounded-full" style="background:rgba(201,162,39,0.1);color:#C9A227;">Supply Chain Finance</span>
+          <h3 class="text-base font-bold mt-3 mb-2" style="color:#0C1F3F;">How SCF Programs Are Unlocking $180B in GCC Working Capital</h3>
+          <p class="text-xs leading-relaxed mb-4" style="color:#64748b;">Supply chain finance is transforming how GCC businesses manage liquidity — discover the models driving the region's B2B capital revolution.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs" style="color:#94a3b8;">Jan 2025 · 7 min read</span>
+            <button class="text-xs font-semibold" style="color:#008C8C;">Read More →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="rounded-2xl overflow-hidden hover:shadow-lg transition-shadow" style="border:1px solid #e2e8f0;">
+        <div class="w-full flex items-center justify-center p-8" style="height:160px;background:linear-gradient(135deg,#0C1F3F,#0a3d5c);">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:rgba(255,255,255,0.4);">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+          </svg>
+        </div>
+        <div class="p-6">
+          <span class="text-xs font-semibold px-2 py-1 rounded-full" style="background:rgba(12,31,63,0.08);color:#0C1F3F;">Compliance</span>
+          <h3 class="text-base font-bold mt-3 mb-2" style="color:#0C1F3F;">Islamic Finance & Digital Invoicing: Building a Sharia-Compliant Infrastructure</h3>
+          <p class="text-xs leading-relaxed mb-4" style="color:#64748b;">How Murabaha, Wakala, and Ijara structures can be embedded into modern invoice and payment workflows for GCC banks.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs" style="color:#94a3b8;">Jan 2025 · 6 min read</span>
+            <button class="text-xs font-semibold" style="color:#008C8C;">Read More →</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!--     RESOURCE TYPES — 5 CATEGORIES       -->
+<!-- ═══════════════════════════════════════ -->
+<section class="w-full py-16" style="background:#F4F7FA;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <p class="text-sm font-semibold mb-2" style="color:#008C8C;">Explore By Type</p>
+      <h2 class="text-3xl font-bold" style="color:#0C1F3F;">All Resources</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Blog -->
+      <div class="bg-white rounded-2xl p-8 hover:shadow-lg transition-shadow flex gap-5 items-start" style="border:1px solid #e2e8f0;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(0,140,140,0.1);">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#008C8C;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-2" style="color:#0C1F3F;">Blog & Insights</h3>
+          <p class="text-sm leading-relaxed mb-3" style="color:#64748b;">Expert articles on GCC finance trends, e-invoicing, working capital, and B2B payments — published by our team and industry partners.</p>
+          <button class="text-sm font-semibold" style="color:#008C8C;">Browse Articles →</button>
+        </div>
+      </div>
+
+      <!-- Whitepapers -->
+      <div class="bg-white rounded-2xl p-8 hover:shadow-lg transition-shadow flex gap-5 items-start" style="border:1px solid #e2e8f0;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(201,162,39,0.1);">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#C9A227;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-2" style="color:#0C1F3F;">Whitepapers</h3>
+          <p class="text-sm leading-relaxed mb-3" style="color:#64748b;">In-depth research reports on GCC invoice digitization, supply chain finance, and regulatory compliance — free to download.</p>
+          <button class="text-sm font-semibold" style="color:#C9A227;">Download Reports →</button>
+        </div>
+      </div>
+
+      <!-- Webinars -->
+      <div class="bg-white rounded-2xl p-8 hover:shadow-lg transition-shadow flex gap-5 items-start" style="border:1px solid #e2e8f0;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(12,31,63,0.08);">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#0C1F3F;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.069A1 1 0 0121 8.82v6.36a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-2" style="color:#0C1F3F;">Webinars</h3>
+          <p class="text-sm leading-relaxed mb-3" style="color:#64748b;">Live and on-demand sessions with GCC finance leaders, regulatory experts, and Saryaan's product team — watch at your own pace.</p>
+          <button class="text-sm font-semibold" style="color:#0C1F3F;">Watch Sessions →</button>
+        </div>
+      </div>
+
+      <!-- Case Studies -->
+      <div class="bg-white rounded-2xl p-8 hover:shadow-lg transition-shadow flex gap-5 items-start" style="border:1px solid #e2e8f0;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(0,166,90,0.1);">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#00A65A;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-2" style="color:#0C1F3F;">Case Studies</h3>
+          <p class="text-sm leading-relaxed mb-3" style="color:#64748b;">Real results from GCC enterprises using Saryaan — see how businesses reduced payment cycles, improved liquidity, and cut fraud risk.</p>
+          <button class="text-sm font-semibold" style="color:#00A65A;">View Case Studies →</button>
+        </div>
+      </div>
+
+      <!-- Regulatory Updates -->
+      <div class="bg-white rounded-2xl p-8 hover:shadow-lg transition-shadow flex gap-5 items-start" style="border:1px solid #e2e8f0;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(0,140,140,0.1);">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:#008C8C;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-2" style="color:#0C1F3F;">Regulatory & Compliance Updates</h3>
+          <p class="text-sm leading-relaxed mb-3" style="color:#64748b;">Stay current on ZATCA, GCC e-invoicing mandates, VAT changes, and financial regulation updates across Qatar, UAE, Saudi Arabia, and beyond.</p>
+          <button class="text-sm font-semibold" style="color:#008C8C;">View Updates →</button>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="rounded-2xl p-8 flex gap-5 items-start" style="background:linear-gradient(135deg,#0C1F3F,#008C8C);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(255,255,255,0.15);">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-2 text-white">Newsletter</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color:rgba(255,255,255,0.75);">Get GCC finance insights delivered to your inbox every month. No spam — just valuable content.</p>
+          <div class="flex gap-2 flex-wrap">
+            <input type="email" placeholder="your@email.com"
+              class="px-4 py-2 rounded-full text-sm outline-none flex-1" style="min-width:140px;border:none;color:#1E293B;"/>
+            <button class="px-5 py-2 rounded-full text-sm font-semibold text-white whitespace-nowrap" style="background:#C9A227;">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!--              CTA                        -->
+<!-- ═══════════════════════════════════════ -->
+<section class="w-full py-20" style="background:linear-gradient(to bottom,#0a3d5c 0%,#008C8C 100%);">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-white mb-4">Want a Personalized Walkthrough?</h2>
+    <p class="text-base mb-8" style="color:rgba(255,255,255,0.8);">
+      Talk to our team and see exactly how Saryaan fits your invoice, payment, and capital workflow.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="contact.html">
+        <button class="px-8 py-3 rounded-full font-semibold text-white text-sm" style="background:#C9A227;">Request a Demo</button>
+      </a>
+      <a href="contact.html">
+        <button class="px-8 py-3 rounded-full font-semibold text-sm" style="color:#fff;border:2px solid rgba(255,255,255,0.6);">Contact Us</button>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!--              FOOTER                     -->
+<!-- ═══════════════════════════════════════ -->
+<footer class="w-full py-12" style="background:#0C1F3F;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+      <div>
+        <p class="text-2xl font-bold mb-3" style="color:white;">SARYAAN<span style="color:#008C8C;">.</span></p>
+        <p class="text-sm leading-relaxed" style="color:rgba(255,255,255,0.5);">Powering the Flow of Business Capital Across the GCC.</p>
+      </div>
+      <div>
+        <p class="text-xs font-bold mb-4 tracking-widest" style="color:#008C8C;">SOLUTIONS</p>
+        <div class="flex flex-col gap-2">
+          <a href="solutions.html" class="text-sm" style="color:rgba(255,255,255,0.6);">Invoice Infrastructure</a>
+          <a href="solutions.html" class="text-sm" style="color:rgba(255,255,255,0.6);">Payment Orchestration</a>
+          <a href="solutions.html" class="text-sm" style="color:rgba(255,255,255,0.6);">Supply Chain Finance</a>
+          <a href="solutions.html" class="text-sm" style="color:rgba(255,255,255,0.6);">Risk & Analytics</a>
+        </div>
+      </div>
+      <div>
+        <p class="text-xs font-bold mb-4 tracking-widest" style="color:#008C8C;">COMPANY</p>
+        <div class="flex flex-col gap-2">
+          <a href="industries.html" class="text-sm" style="color:rgba(255,255,255,0.6);">Industries</a>
+          <a href="partners.html" class="text-sm" style="color:rgba(255,255,255,0.6);">Partners</a>
+          <a href="company.html" class="text-sm" style="color:rgba(255,255,255,0.6);">About Us</a>
+          <a href="contact.html" class="text-sm" style="color:rgba(255,255,255,0.6);">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p class="text-xs font-bold mb-4 tracking-widest" style="color:#008C8C;">GCC REGIONS</p>
+        <div class="flex flex-col gap-2">
+          <span class="text-sm" style="color:rgba(255,255,255,0.6);">🇶🇦 Qatar</span>
+          <span class="text-sm" style="color:rgba(255,255,255,0.6);">🇸🇦 Saudi Arabia</span>
+          <span class="text-sm" style="color:rgba(255,255,255,0.6);">🇦🇪 UAE</span>
+          <span class="text-sm" style="color:rgba(255,255,255,0.6);">🇰🇼 Kuwait · 🇧🇭 Bahrain · 🇴🇲 Oman</span>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-3" style="border-top:1px solid rgba(255,255,255,0.1);">
+      <p class="text-xs" style="color:rgba(255,255,255,0.4);">© 2026 Saryaan. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="#" class="text-xs" style="color:rgba(255,255,255,0.4);">Privacy Policy</a>
+        <a href="#" class="text-xs" style="color:rgba(255,255,255,0.4);">Terms of Use</a>
+        <a href="#" class="text-xs" style="color:rgba(255,255,255,0.4);">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
