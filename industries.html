@@ -40,6 +40,7 @@
                 <button class="px-5 py-2 rounded-full text-sm font-semibold text-white"
                     style="background:#008C8C;">Contact Us</button>
             </div>
+            <!-- JS link: main.js -> toggleMenu() for mobile navbar -->
             <button class="lg:hidden p-2" onclick="toggleMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" style="color:#0C1F3F;">
@@ -48,6 +49,7 @@
             </button>
         </div>
         <div id="mobile-menu" class="lg:hidden px-6 pb-5 flex-col gap-4 border-t border-gray-100">
+            <a href="index.html" class="text-sm font-medium py-2" style="color:#008C8C;">Home</a>
             <a href="solutions.html" class="text-sm font-medium py-2" style="color:#1E293B;">Solutions</a>
             <a href="industries.html" class="text-sm font-medium py-2" style="color:#008C8C;">Industries</a>
             <a href="partners.html" class="text-sm font-medium py-2" style="color:#1E293B;">Partners</a>
@@ -283,8 +285,8 @@
             </p>
         </div>
     </footer>
-
+    <!-- JS source file for this page: main.js
+         Current usage here: mobile navbar toggleMenu() -->
     <script src="main.js"></script>
 </body>
-
 </html>

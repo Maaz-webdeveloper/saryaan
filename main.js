@@ -1,10 +1,51 @@
 // ═══════════════════════════════
 //        MOBILE MENU TOGGLE
 // ═══════════════════════════════
+// Used by all pages with mobile nav button:
+// index.html, solutions.html, industries.html, contact.html
 function toggleMenu() {
   const menu = document.getElementById("mobile-menu");
   menu.classList.toggle("open");
 }
+
+// Global page init (single place):
+// Attaches handlers only when matching elements exist.
+document.addEventListener("DOMContentLoaded", function () {
+  // Solutions UI init (index.html + solutions.html)
+  if (document.getElementById("items-list")) {
+    renderSolution();
+  }
+
+  // Waitlist form handler (index.html only)
+  const waitlistForm = document.getElementById("waitlist-form");
+  const waitlistSuccess = document.getElementById("success-msg");
+  if (waitlistForm && waitlistSuccess) {
+    waitlistForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      waitlistSuccess.classList.remove("hidden");
+      waitlistForm.reset();
+
+      setTimeout(function () {
+        waitlistSuccess.classList.add("hidden");
+      }, 3000);
+    });
+  }
+
+  // Contact form handler (contact.html only)
+  const contactForm = document.getElementById("contactForm");
+  const contactSuccess = document.getElementById("contact-success");
+  if (contactForm && contactSuccess) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      contactSuccess.classList.remove("hidden");
+      contactForm.reset();
+
+      setTimeout(function () {
+        contactSuccess.classList.add("hidden");
+      }, 3000);
+    });
+  }
+});
 
 // ═══════════════════════════════
 //        SOLUTIONS DATA
@@ -94,6 +135,7 @@ let currentItem = 0;
 // ═══════════════════════════════
 //       SWITCH SOLUTION
 // ═══════════════════════════════
+// Solutions section interaction (index.html + solutions.html)
 function switchSolution(idx) {
   currentSol = idx;
   currentItem = 0;
@@ -103,6 +145,7 @@ function switchSolution(idx) {
 // ═══════════════════════════════
 //         SWITCH ITEM
 // ═══════════════════════════════
+// Solutions section interaction (index.html + solutions.html)
 function switchItem(idx) {
   currentItem = idx;
   renderItems();
@@ -112,6 +155,7 @@ function switchItem(idx) {
 // ═══════════════════════════════
 //       RENDER SOLUTION
 // ═══════════════════════════════
+// Renders active solution state (index.html + solutions.html)
 function renderSolution() {
   const sol = solutions[currentSol];
 
@@ -158,6 +202,7 @@ function renderSolution() {
 // ═══════════════════════════════
 //         RENDER ITEMS
 // ═══════════════════════════════
+// Builds clickable item list (index.html + solutions.html)
 function renderItems() {
   const sol = solutions[currentSol];
   const list = document.getElementById("items-list");
@@ -194,6 +239,7 @@ function renderItems() {
 // ═══════════════════════════════
 //         RENDER DESC
 // ═══════════════════════════════
+// Updates selected item description panel (index.html + solutions.html)
 function renderDesc() {
   const sol = solutions[currentSol];
   const item = sol.items[currentItem];
@@ -204,84 +250,3 @@ function renderDesc() {
 }
 
 // ═══════════════════════════════
-//            INIT
-// ═══════════════════════════════
-document.addEventListener("DOMContentLoaded", function () {
-  renderSolution();
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("waitlist-form");
-  const successMsg = document.getElementById("success-msg");
-  const submitBtn = document.getElementById("submit-btn");
-  const solutionButtons = document.querySelectorAll(".solution-btn");
-
-  // Toggle Solution Buttons
-  solutionButtons.forEach((btn) => {
-    btn.addEventListener("click", function () {
-      const active = this.getAttribute("data-active") === "true";
-
-      this.setAttribute("data-active", !active);
-      this.classList.toggle("bg-teal-600");
-      this.classList.toggle("text-white");
-      this.classList.toggle("border-teal-600");
-    });
-  });
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const name = document.getElementById("field-name").value.trim();
-    const company = document.getElementById("field-company").value.trim();
-    const email = document.getElementById("field-email").value.trim();
-    const phone = document.getElementById("field-phone").value.trim();
-    const industry = document.getElementById("field-industry").value;
-    const country = document.getElementById("field-country").value;
-
-    if (!name || !company || !email || !industry || !country) {
-      alert("Please fill all required fields (*)");
-      return;
-    }
-
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-      alert("Enter valid email address");
-      return;
-    }
-
-    submitBtn.disabled = true;
-    submitBtn.innerText = "Processing...";
-
-    let selectedSolutions = [];
-    solutionButtons.forEach((btn) => {
-      if (btn.getAttribute("data-active") === "true") {
-        selectedSolutions.push(btn.innerText.trim());
-      }
-    });
-
-    console.log({
-      name,
-      company,
-      email,
-      phone,
-      industry,
-      country,
-      selectedSolutions,
-    });
-
-    form.style.display = "none";
-    successMsg.classList.remove("hidden");
-
-    setTimeout(() => {
-      form.reset();
-      form.style.display = "block";
-      successMsg.classList.add("hidden");
-      submitBtn.disabled = false;
-      submitBtn.innerText = "Apply for Early Access →";
-
-      solutionButtons.forEach((btn) => {
-        btn.setAttribute("data-active", "false");
-        btn.classList.remove("bg-teal-600", "text-white", "border-teal-600");
-      });
-    }, 3000);
-  });
-});

@@ -56,6 +56,7 @@
       </div>
 
       <!-- Mobile Hamburger -->
+      <!-- JS link: main.js -> toggleMenu() for mobile navbar -->
       <button class="lg:hidden p-2" onclick="toggleMenu()">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
           style="color:#0C1F3F;">
@@ -98,6 +99,8 @@
         <!-- LEFT: Donut Chart -->
         <div class="w-full lg:w-5/12 flex justify-center items-center" style="min-height:340px;">
           <div class="relative flex justify-center items-center" style="width:300px;height:300px;">
+            <!-- JS link: main.js -> renderSolution(), switchSolution(), switchItem()
+                 Uses: #seg0/#seg1/#seg2, #items-list, #sol-badge, #desc-title, #tab0/#tab1/#tab2 -->
             <svg viewBox="0 0 300 300" width="300" height="300" style="position:absolute;">
               <path id="seg0" d="M150,150 L150,20 A130,130 0 0,1 262,215 Z" fill="#008C8C" onclick="switchSolution(0)"
                 style="cursor:pointer;transition:fill 0.3s;" />
@@ -316,6 +319,7 @@
     </div>
   </section>
 
+  <!-- JS source file for this page: main.js -->
   <script src="main.js"></script>
 </body>
 
